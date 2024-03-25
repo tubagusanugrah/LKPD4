@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let jam = 23;
+        let menit = 59;
+        let detik = 59;
+        let totaldetik = (jam*3600) + (menit*60) + (detik) + (1);
+        
+        jam = Math.floor (totaldetik / 3600 % 24)
+        menit = Math.floor (totaldetik % 3600 / 60)
+        detik = totaldetik % 60
+
+        console.log (jam + " Jam ", menit + " Menit ", detik + " Detik ")
+    </script>
+</body>
+</html>
